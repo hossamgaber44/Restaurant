@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/swiper1.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title> Restaurant</title>
+</head>
+
+<body>
+    <main>
+        <section class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="nav-logo">
+                        <div class="logo-img">
+                            <img src="img/logo1.png">
+                        </div>
+                    </div>
+                    <div class="nav-link">
+                        <i onclick="toggleNavbar()" class="close-menu fa-solid fa-x"></i>
+                        <ul>
+                            <li>
+                                <a onclick="toggleNavbar()" href="#banner">Home</a>
+                            </li>
+                            <li>
+                                <a onclick="toggleNavbar()" href="#dishes">Dishes</a>
+                            </li>
+                            <li>
+                                <a onclick="toggleNavbar()" href="#aboutUs">About</a>
+                            </li>
+                            <li>
+                                <a onclick="toggleNavbar()" href="#menu">Menu</a>
+                            </li>
+                            <li>
+                                <a onclick="toggleNavbar()" href="#review">Review</a>
+                            </li>
+                            <li>
+                                <a onclick="toggleNavbar()" href="#order">Order</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-info">
+                        <i onclick="toggleSearch()" class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <i onclick="toggleNavbar()" class="fa fa-bars Menu-hamburger"></i>
+                </div>
+            </div>
+        </section>
+        <section class="banner" id="banner">
+            <div class="container">
+                <div class="banner-content">
+                    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true">
+                        <swiper-slide>
+                            <div class="banner-content-info">
+                                <h3>Our Special Dish</h3>
+                                <h1>Fried Chicken</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur amet similique
+                                    distinctio eum beatae totam aut corporis. </p>
+                                <button class="banner-btn">Order Now</button>
+                            </div>
+                            <div class="banner-content-img">
+                                <img src="img/chicken2.png">
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="banner-content-info">
+                                <h3>Our Special Dish</h3>
+                                <h1>Spicy Noodles</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur amet similique
+                                    distinctio eum beatae totam aut corporis. </p>
+                                <button class="banner-btn">Order Now</button>
+                            </div>
+                            <div class="banner-content-img">
+                                <img src="img/chicken1.png">
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="banner-content-info">
+                                <h3>Our Special Dish</h3>
+                                <h1>Hot Pizza</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur amet similique
+                                    distinctio eum beatae totam aut corporis. </p>
+                                <button class="banner-btn">Order Now</button>
+                            </div>
+                            <div class="banner-content-img">
+                                <img src="img/pizza1.png">
+                            </div>
+                        </swiper-slide>
+                    </swiper-container>
+                </div>
+            </div>
+        </section>
+        <section class="dishes" id="dishes">
+            <div class="container">
+                <div class="dishes-header">
+                    <h3>Our Dishes</h3>
+                    <h1>POPULAR DISHES</h1>
+                </div>
+                <div class="dishes-products">
+                    <div class="d-product">
+                        <div class="d-product-img">
+                            <img src="img/burger1.png">
+                        </div>
+                        <div class="d-product-info">
+                            <h2 class="d-product-title">Tasty Food</h2>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="d-product-salary">
+                                <span class="salary"><b>$</b>15.99 </span>
+                                <button class="banner-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-product">
+                        <div class="d-product-img">
+                            <img src="img/burger1.png">
+                        </div>
+                        <div class="d-product-info">
+                            <h2 class="d-product-title">Tasty Food</h2>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="d-product-salary">
+                                <span class="salary"><b>$</b>15.99 </span>
+                                <button class="banner-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-product">
+                        <div class="d-product-img">
+                            <img src="img/burger1.png">
+                        </div>
+                        <div class="d-product-info">
+                            <h2 class="d-product-title">Tasty Food</h2>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="d-product-salary">
+                                <span class="salary"><b>$</b>15.99 </span>
+                                <button class="banner-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aboutUs" id="aboutUs">
+            <div class="container">
+                <div class="about-header">
+                    <h3>About US</h3>
+                    <h1>WHY CHOOSE US?</h1>
+                </div>
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="img/2-١.png">
+                    </div>
+                    <div class="about-info">
+                        <h1>Best Food In The Country</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis officia ipsam cumque
+                            similique quisquam sint aspernatur error rerum nihil quia sed sapiente non cum vel porro id
+                            quidem consequuntur molestias, tempore perferendis vero!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis officia ipsam cumque
+                            similique quisquam sint aspernatur error rerum nihil quia sed sapiente non cum vel porro id
+                            quidem consequuntur molestias, tempore perferendis vero!</p>
+                        <div class="feutures">
+                            <div class="feutures-icon">
+                                <i class="fa-solid fa-truck"></i>
+                                <h5>Free Delivery</h5>
+                            </div>
+                            <div class="feutures-icon">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <h5>Easy Payments</h5>
+                            </div>
+                            <div class="feutures-icon">
+                                <i class="fa-solid fa-headset"></i>
+                                <h5>24/7 Service</h5>
+                            </div>
+                        </div>
+                        <button class="banner-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="menu">
+            <div class="container">
+                <div class="menu-header">
+                    <h3>Our Menu</h3>
+                    <h1>TODAY'S SPECIALITY</h1>
+                </div>
+                <div class="menu-products">
+                    <div class="m-product">
+                        <div class="m-product-img">
+                            <img src="img/breakfast1.jpg">
+                        </div>
+                        <div class="m-product-info">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h2 class="m-product-title">Tasty Food</h2>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolore.</P>
+                            <div class="m-product-salary">
+                                <button class="banner-btn">Add To Cart</button>
+                                <span class="salary"><b>$</b>15.99 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-product">
+                        <div class="m-product-img">
+                            <img src="img/breakfast2.jpg">
+                        </div>
+                        <div class="m-product-info">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h2 class="m-product-title">Tasty Food</h2>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolore.</P>
+                            <div class="m-product-salary">
+                                <button class="banner-btn">Add To Cart</button>
+                                <span class="salary"><b>$</b>15.99 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-product">
+                        <div class="m-product-img">
+                            <img src="img/breakfast3.jpg">
+                        </div>
+                        <div class="m-product-info">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h2 class="m-product-title">Tasty Food</h2>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolore.</P>
+                            <div class="m-product-salary">
+                                <button class="banner-btn">Add To Cart</button>
+                                <span class="salary"><b>$</b>15.99 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+        <section class="review" id="review">
+            <div class="container">
+                <div class="review-content">
+                    <div class="review-header">
+                        <h3>Customer's Review</h3>
+                        <h1>WHAT THEY SAY</h1>
+                    </div>
+                    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+                        slides-per-view="3.2">
+                        <swiper-slide>
+                            <div class="customer-header">
+                                <div class="customer-title">
+                                    <div class="customer-img">
+                                        <img src="img/pic-1.png">
+                                    </div>
+                                    <div class="customer-name">
+                                        <h3>John Deo</h3>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="img/customer-reviews.jpeg">
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste dignissimos
+                                    odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem dolorum
+                                    nemo maxime placeat eaque in provident?</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="customer-header">
+                                <div class="customer-title">
+                                    <div class="customer-img">
+                                        <img src="img/pic-2.png">
+                                    </div>
+                                    <div class="customer-name">
+                                        <h3>John Deo</h3>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="img/customer-reviews.jpeg">
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste dignissimos
+                                    odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem dolorum
+                                    nemo maxime placeat eaque in provident?</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="customer-header">
+                                <div class="customer-title">
+                                    <div class="customer-img">
+                                        <img src="img/pic-3.png">
+                                    </div>
+                                    <div class="customer-name">
+                                        <h3>John Deo</h3>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="img/customer-reviews.jpeg">
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste dignissimos
+                                    odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem dolorum
+                                    nemo maxime placeat eaque in provident?</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="customer-header">
+                                <div class="customer-title">
+                                    <div class="customer-img">
+                                        <img src="img/pic-4.png">
+                                    </div>
+                                    <div class="customer-name">
+                                        <h3>John Deo</h3>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="img/customer-reviews.jpeg">
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste dignissimos
+                                    odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem dolorum
+                                    nemo maxime placeat eaque in provident?</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="customer-header">
+                                <div class="customer-title">
+                                    <div class="customer-img">
+                                        <img src="img/pic-5.png">
+                                    </div>
+                                    <div class="customer-name">
+                                        <h3>John Deo</h3>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="img/customer-reviews.jpeg">
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste dignissimos
+                                    odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem dolorum
+                                    nemo maxime placeat eaque in provident?</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="customer-header">
+                                <div class="customer-title">
+                                    <div class="customer-img">
+                                        <img src="img/pic-6.png">
+                                    </div>
+                                    <div class="customer-name">
+                                        <h3>John Deo</h3>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="img/customer-reviews.jpeg">
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste dignissimos
+                                    odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem dolorum
+                                    nemo maxime placeat eaque in provident?</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="customer-header">
+                                <div class="customer-title">
+                                    <div class="customer-img">
+                                        <img src="img/pic-3.png">
+                                    </div>
+                                    <div class="customer-name">
+                                        <h3>John Deo</h3>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="img/customer-reviews.jpeg">
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste dignissimos
+                                    odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem dolorum
+                                    nemo maxime placeat eaque in provident?</p>
+                            </div>
+                        </swiper-slide>
+
+                    </swiper-container>
+                </div>
+            </div>
+        </section>-->
+        <section class="review" id="review">
+            <div class="container">
+                <div class="review-content">
+                    <div class="review-header">
+                        <h3>Customer's Review</h3>
+                        <h1>WHAT THEY SAY</h1>
+                    </div>
+                    <div class=" mySwiper" pagination="true" pagination-clickable="true"
+                        slides-per-view="1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-content">
+                                    <div class="customer-header">
+                                        <div class="customer-title">
+                                            <div class="customer-img">
+                                                <img src="img/pic-1.png">
+                                            </div>
+                                            <div class="customer-name">
+                                                <h3>John Deo</h3>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img">
+                                            <img src="img/customer-reviews.jpeg">
+                                        </div>
+                                    </div>
+                                    <div class="customer-info">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste
+                                            dignissimos
+                                            odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem
+                                            dolorum
+                                            nemo maxime placeat eaque in provident?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div class="swiper-content">
+                                    <div class="customer-header">
+                                        <div class="customer-title">
+                                            <div class="customer-img">
+                                                <img src="img/pic-2.png">
+                                            </div>
+                                            <div class="customer-name">
+                                                <h3>John Deo</h3>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img">
+                                            <img src="img/customer-reviews.jpeg">
+                                        </div>
+                                    </div>
+                                    <div class="customer-info">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste
+                                            dignissimos
+                                            odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem
+                                            dolorum
+                                            nemo maxime placeat eaque in provident?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div class="swiper-content">
+                                    <div class="customer-header">
+                                        <div class="customer-title">
+                                            <div class="customer-img">
+                                                <img src="img/pic-3.png">
+                                            </div>
+                                            <div class="customer-name">
+                                                <h3>John Deo</h3>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img">
+                                            <img src="img/customer-reviews.jpeg">
+                                        </div>
+                                    </div>
+                                    <div class="customer-info">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste
+                                            dignissimos
+                                            odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem
+                                            dolorum
+                                            nemo maxime placeat eaque in provident?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div class="swiper-content">
+                                    <div class="customer-header">
+                                        <div class="customer-title">
+                                            <div class="customer-img">
+                                                <img src="img/pic-4.png">
+                                            </div>
+                                            <div class="customer-name">
+                                                <h3>John Deo</h3>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img">
+                                            <img src="img/customer-reviews.jpeg">
+                                        </div>
+                                    </div>
+                                    <div class="customer-info">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste
+                                            dignissimos
+                                            odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem
+                                            dolorum
+                                            nemo maxime placeat eaque in provident?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div class="swiper-content">
+                                    <div class="customer-header">
+                                        <div class="customer-title">
+                                            <div class="customer-img">
+                                                <img src="img/pic-5.png">
+                                            </div>
+                                            <div class="customer-name">
+                                                <h3>John Deo</h3>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img">
+                                            <img src="img/customer-reviews.jpeg">
+                                        </div>
+                                    </div>
+                                    <div class="customer-info">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste
+                                            dignissimos
+                                            odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem
+                                            dolorum
+                                            nemo maxime placeat eaque in provident?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div class="swiper-content">
+                                    <div class="customer-header">
+                                        <div class="customer-title">
+                                            <div class="customer-img">
+                                                <img src="img/pic-6.png">
+                                            </div>
+                                            <div class="customer-name">
+                                                <h3>John Deo</h3>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img">
+                                            <img src="img/customer-reviews.jpeg">
+                                        </div>
+                                    </div>
+                                    <div class="customer-info">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste
+                                            dignissimos
+                                            odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem
+                                            dolorum
+                                            nemo maxime placeat eaque in provident?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div class="swiper-content">
+                                    <div class="customer-header">
+                                        <div class="customer-title">
+                                            <div class="customer-img">
+                                                <img src="img/pic-3.png">
+                                            </div>
+                                            <div class="customer-name">
+                                                <h3>John Deo</h3>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img">
+                                            <img src="img/customer-reviews.jpeg">
+                                        </div>
+                                    </div>
+                                    <div class="customer-info">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto iste
+                                            dignissimos
+                                            odio debitis harum consequuntur earum fuga ex nostrum ab, laudantium, rem
+                                            dolorum
+                                            nemo maxime placeat eaque in provident?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="order" id="order">
+            <div class="order-container">
+                <div class="order-header">
+                    <h3>Order Now</h3>
+                    <h1>FREE AND FAST</h1>
+                </div>
+                <form>
+                    <div class="order-containt">
+                        <div class="order-data">
+                            <label for="name">Your Name</label>
+                            <input id="name" type="text" placeholder="enter your name ">
+                            <label for="order">Your Order</label>
+                            <input id="order" type="text" placeholder="enter food name">
+                            <label for="quantity">How Musch</label>
+                            <input id="quantity" type="number" placeholder="how many orders">
+                            <label for="address">Your Address</label>
+                            <textarea id="address" type="text" placeholder="enter your address"></textarea>
+                        </div>
+                        <div class="order-data">
+                            <label for="Number">Your Number</label>
+                            <input id="Number" type="number" placeholder="enter your number">
+                            <label for="addition">Addition Food</label>
+                            <input id="addition" type="text" placeholder="extra width food">
+                            <label for="date">Date And Time</label>
+                            <input id="date" type="datetime-local">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" type="textarea" placeholder="enter your message"></textarea>
+                        </div>
+                    </div>
+                    <button class="banner-btn">Order Now</button>
+                </form>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <div class="footer-img">
+                    <img src="img/logo1.png">
+                </div>
+                <div class="footer-content">
+                    <div class="footer-link">
+                        <h2>Location</h2>
+                        <ul>
+                            <li><a>India</a></li>
+                            <li><a>jaban</a></li>
+                            <li><a>Russia</a></li>
+                            <li><a>Usa</a></li>
+                            <li><a>France</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="#banner">Home</a></li>
+                            <li><a href="#dishes">Dishes</a></li>
+                            <li><a href="#aboutUs">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#review">Review</a></li>
+                            <li><a href="#order">Order</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h2>Contact Info</h2>
+                        <ul>
+                            <li><a>+20 01152512799</a></li>
+                            <li><a>+20 01013576221</a></li>
+                            <li><a>hossamgaber027@gmail.com</a></li>
+                            <li><a>mohamed@gmail.com</a></li>
+                            <li><a>Egypt,Cairo,Mokattam</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h2>Follow Us</h2>
+                        <ul>
+                            <li><a
+                                    href="https://www.facebook.com/profile.php?id=100054128583713&mibextid=ZbWKwL">Facebook</a>
+                            </li>
+                            <li><a>Twitter</a></li>
+                            <li><a href="https://instagram.com/hossamgaberhamed?igshid=MzNlNGNkZWQ4Mg==">Instagram</a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/hossam-gaber-8b2154264">Linkedin</a></li>
+                            <li><a href="https://github.com/hossamgaber44">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="end-footer">
+                <h2>Copyright@ 2023 By <span class="end-footer-color">Hossam Gaber</span></h2>
+            </div>
+        </section>
+        <div class="search">
+            <div class="search-input">
+                <input type="search" style="color: #ffffff;" placeholder="Search here...">
+                <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            </div>
+            <i onclick="toggleSearch()" class="fa-solid fa-x close-search"></i>
+        </div>
+    </main>
+    <script src="js/swiper.js"></script>
+    <script src="js/swiperSlid.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
